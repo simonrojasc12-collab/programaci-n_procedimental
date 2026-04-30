@@ -3,92 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
     <title>Usuario</title>
+    <style>
+      body {
+        background-color: #90b0b8;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 500px;
+        width: 100%;
+        background: #c9dee2;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        color: #333;
+      }
+      select {
+        width: 100%;
+        padding: 0.375em 0.75em;
+        border-radius: 4px;
+        border: 1px solid #dbdbdb;
+      }
+    </style>
   </head>
   <body>
-    <div class="field">
-      <label class="label">Nombre</label>
-      <div class="control">
-        <input class="input" type="text" placeholder="Nombre" />
+    <div class="container">
+
+      <div class="field">
+        <label class="label">Nombre</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Nombre" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Apellido</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Apellido" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Tipo de documento</label>
+        <div class="control">
+          <div class="select is-fullwidth">
+            <select>
+              <option>T.I</option>
+              <option>C.C</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Número de documento</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="..." />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Teléfono</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="..." />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Correo</label>
+        <div class="control has-icons-left has-icons-right">
+          <input
+            class="input is-danger"
+            type="email"
+            placeholder="Email"
+            value="..."
+          />
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Género</label>
+        <div class="control">
+          <div class="select is-fullwidth">
+            <select>
+              <option>Masculino</option>
+              <option>Femenino</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Cargo</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Cargo" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Fecha de nacimiento</label>
+        <div class="control">
+          <input class="input" type="date" placeholder="Fecha" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Contraseña</label>
+        <div class="control">
+          <input class="input" type="password" placeholder="Contraseña" />
+        </div>
       </div>
     </div>
-
-    <div class="field">
-      <label class="label">Apellido</label>
-      <div class="control">
-        <input class="input" type="text" placeholder="Apellido" />
-      </div>
-    </div>
-
-    <div class="Tipo de documento">
-      <label class="label">Tipo de documento</label>
-      <select>
-        <option>T.I</option>
-        <option>C.C</option>
-      </select>
-    </div>
-
-    <div class="field">
-      <label class="label">Numero de documento</label>
-      <div class="control">
-        <input class="input" type="INT" placeholder="..." />
-      </div>
-    </div>
-
-    <div class="field">
-      <label class="label">Telefono</label>
-      <div class="control">
-        <input class="input" type="INT" placeholder="..." />
-      </div>
-    </div>
-
-    <div class="field">
-      <label class="label">Correo</label>
-      <div class="control has-icons-left has-icons-right">
-        <input
-          class="input is-danger"
-          type="email"
-          placeholder="Email input"
-          value="..."
-        />
-        <span class="icon is-small is-left">
-          <i class="fas fa-envelope"></i>
-        </span>
-        <span class="icon is-small is-right">
-          <i class="fas fa-exclamation-triangle"></i>
-        </span>
-      </div>
-    </div>
-
-    <div class="Tipo de documento">
-      <label class="label">Genero</label>
-      <select>
-        <option>Masculino</option>
-        <option>Femenino</option>
-      </select>
-    </div>
-
-    <div class="field">
-      <label class="label">Cargo</label>
-      <div class="control">
-        <input class="input" type="text" placeholder="Cargo" />
-      </div>
-    </div>
-
-        <div class="field">
-      <label class="label">Fecha de nacimiento</label>
-      <div class="control">
-        <input class="input" type="INT" placeholder="Fecha" />
-      </div>
-    </div>
-
-    <div class="field">
-      <label class="label">Contraseña</label>
-      <div class="control">
-        <input class="input" type="text" placeholder="Contraseña" />
-      </div>
-    </div>
-
-
   </body>
 </html>
