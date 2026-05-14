@@ -16,7 +16,7 @@
         justify-content: center;
         align-items: flex-start;
         min-height: 100vh;
-        font-family: 'Arial', sans-serif;
+        font-family: "Arial", sans-serif;
         margin: 0;
         padding: 20px;
       }
@@ -40,8 +40,29 @@
   </head>
 
   <body>
-    <div class="container">
 
+    <button class="btn-inicio" onclick="window.location.href = '../index.html'">
+      ⬅
+    </button>
+
+    <style>
+      .btn-inicio {
+        background: #c9dee2;
+        color: #90b0b8;
+        border: none;
+        padding: 10px 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s;
+      }
+
+      .btn-inicio:hover {
+        background: #799ebd;
+      }
+    </style>
+
+    <div class="container">
       <div class="field">
         <label class="label">Producto</label>
         <div class="control">
@@ -95,4 +116,3 @@
     </div>
   </body>
 </html>
-```
