@@ -15,7 +15,7 @@
         justify-content: center;
         align-items: flex-start;
         min-height: 100vh;
-        font-family: 'Arial', sans-serif;
+        font-family: "Arial", sans-serif;
         margin: 0;
         padding: 20px;
       }
@@ -25,7 +25,7 @@
         background: #c9dee2;
         padding: 30px;
         border-radius: 8px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       }
       h2 {
         text-align: center;
@@ -36,48 +36,48 @@
     </style>
   </head>
   <body>
+    <script src="../js/inventario.js"></script>
 
-  <button class="btn-inicio" onclick="window.location.href='../index.html'">
-    ⬅
-</button>
+    <button class="btn-inicio" onclick="window.location.href = '../index.html'">
+      ⬅
+    </button>
 
-<style>
-.btn-inicio{
-    background:#c9dee2;
-    color:#90b0b8;
-    border:none;
-    padding:10px 18px;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:16px;
-    transition:0.3s;
-}
+    <style>
+      .btn-inicio {
+        background: #c9dee2;
+        color: #90b0b8;
+        border: none;
+        padding: 10px 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s;
+      }
 
-.btn-inicio:hover{
-    background:#475a5e;
-}
-</style>
+      .btn-inicio:hover {
+        background: #475a5e;
+      }
+    </style>
 
     <div class="container">
-
       <div class="field">
         <label class="label">Código del producto</label>
         <div class="control">
-          <input class="input" type="text" placeholder="Código" />
+          <input class="input" type="text" id="codigo" placeholder="Código" />
         </div>
       </div>
 
       <div class="field">
         <label class="label">Nombre del producto</label>
         <div class="control">
-          <input class="input" type="text" placeholder="Nombre" />
+          <input class="input" type="text" id="nombre_producto" placeholder="Nombre" />
         </div>
       </div>
 
       <div class="field">
         <label class="label">Cantidad de producto</label>
         <div class="control">
-          <input class="input" type="text" placeholder="Cantidad" />
+          <input class="input" type="text" id="cantidad_producto" placeholder="Cantidad" />
         </div>
       </div>
 
