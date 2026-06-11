@@ -3,6 +3,7 @@ let fecha = document.getElementById("fecha").value;
 let ingresos = document.getElementById("ingresos").value;
 let concepto = document.getElementById("concepto").value;
 let valor = document.getElementById("valor").value;
+let tipo_movimiento = document.getElementById("usuario").value;
 
 function validarFormulario() {
     if (ventas === "" || fecha === "" || ingresos === "" || concepto === "" || valor === "") {
@@ -29,6 +30,9 @@ function validarFormulario() {
         alert("El valor solo debe contener números y puede tener hasta dos decimales.");
         return false;
     }
-    
+        if (!/^[a-zA-Z]+$/.test(nombre)) {
+        alert("El nombre solo debe contener letras.");
+        return false;
+    }
     return true;
 }
