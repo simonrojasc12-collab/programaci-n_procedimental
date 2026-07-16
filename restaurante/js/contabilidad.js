@@ -1,5 +1,4 @@
 function validarFormulario() {
-
 let ventas = document.getElementById("ventas").value;
 let fecha = document.getElementById("fecha").value;
 let ingresos = document.getElementById("ingresos").value;
@@ -71,4 +70,4 @@ let tipo_movimiento = document.getElementById("usuario").value;
 }
 
 
-document.getElementById("btnGuardar").onclick = validarFormulario;
+document.getElementById("btnRegistrar").onclick = validarFormulario;
