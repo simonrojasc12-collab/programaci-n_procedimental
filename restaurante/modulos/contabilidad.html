@@ -9,14 +9,14 @@
     />
     <link rel="stylesheet" href="../css/contabilidad.css" />
     <title>Ventas Restaurante</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Ventas Restaurante</title>
   </head>
 
   <body>
 
-    <script src="../js/contabilidad.js"></script>
 
   <button class="btn-inicio" onclick="window.location.href='../index.html'">
-    ⬅
 </button>
 
 <style>
@@ -75,7 +75,7 @@
       <div class="field">
         <label class="label">Fecha</label>
         <div class="control">
-          <input class="input" type="date" />
+          <input class="input" type="date" id="fecha" />
         </div>
       </div>
 
@@ -89,7 +89,7 @@
       <div class="field">
         <label class="label">Concepto</label>
         <div class="control">
-          <input class="input" type="text" placeholder="Descripción" />
+          <input class="input" id="concepto" type="text" placeholder="Descripción" />
         </div>
       </div>
 
@@ -100,6 +100,9 @@
         </div>
       </div>
             <div class="field mt-5">
+
+
+      <div class="field mt-5">
         <div class="control">
           <button
             class="button is-primary is-fullwidth"
@@ -111,5 +114,8 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../js/contabilidad.js"></script>
+
   </body>
 </html>

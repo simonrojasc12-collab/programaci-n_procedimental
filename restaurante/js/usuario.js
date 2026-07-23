@@ -1,5 +1,6 @@
 console.log("hola mundo");
 
+function validarFormulario() {
 let nombre = document.getElementById("nombre").value;
 let apellido = document.getElementById("apellido").value;
 let tipo_documento = document.getElementById("tipo_documento").value;
@@ -10,8 +11,6 @@ let genero = document.getElementById("genero").value;
 let cargo = document.getElementById("cargo").value;
 let fecha_nacimiento = document.getElementById("fecha_nacimiento").value;
 let contraseña = document.getElementById("contraseña").value;
-
-function validarFormulario() {
     if (nombre === "" || apellido === "" || tipo_documento === "" || numero_documento === "" || telefono === "" || correo === "" || genero === "" || cargo === "" || fecha_nacimiento === "" || contraseña === "") {
         alert("Por favor, complete todos los campos del formulario.");
         return false;
@@ -62,3 +61,5 @@ function validarFormulario() {
     }
     return true;
 }
+
+document.getElementById("btnGuardar").onclick = validarFormulario;
