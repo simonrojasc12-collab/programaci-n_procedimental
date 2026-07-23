@@ -25,7 +25,7 @@ let tipo_movimiento = document.getElementById("usuario").value;
     }
     if (isNaN(Date.parse(fecha))) {
         Swal.fire({
-            title: "Drag me!",
+            title: "Por favor, ingrese una fecha válida!",
             icon: "Error",
         });
         console.log("Por favor, ingrese una fecha válida.");
@@ -33,7 +33,7 @@ let tipo_movimiento = document.getElementById("usuario").value;
     }
     if (new Date(fecha) > new Date()) {
         Swal.fire({
-            title: "Drag me!",
+            title: "La fecha no puede ser en el futuro!",
             icon: "Error",
         });
         console.log("La fecha no puede ser en el futuro.");
@@ -41,7 +41,7 @@ let tipo_movimiento = document.getElementById("usuario").value;
     }
     if (!/^\d+(\.\d{1,2})?$/.test(ingresos)) {
         Swal.fire({
-            title: "Drag me!",
+            title: "Por favor, ingrese un valor válido para los ingresos!",
             icon: "Error",
         });
         console.log("Los ingresos solo deben contener números y pueden tener hasta dos decimales.");
@@ -49,7 +49,7 @@ let tipo_movimiento = document.getElementById("usuario").value;
     }
     if (!/^\d+(\.\d{1,2})?$/.test(valor)) {
         Swal.fire({
-            title: "Drag me!",
+            title: "Por favor, ingrese un valor válido para el valor!",
             icon: "Error",
         });
         console.log("El valor solo debe contener números y puede tener hasta dos decimales.");
@@ -57,7 +57,7 @@ let tipo_movimiento = document.getElementById("usuario").value;
     }
     if (!/^[a-zA-Z]+$/.test(nombre)) {
         Swal.fire({
-            title: "Drag me!",
+            title: "Por favor, ingrese un nombre válido!",
             icon: "Error",
         });
         console.log("El nombre solo debe contener letras.");
